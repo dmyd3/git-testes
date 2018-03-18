@@ -1,4 +1,5 @@
-#Github
+# Github
+## Aprendendo a usar o Git
 
 Arquivo teste da aula de Git - aula 8
 para salvar aperte esc e escreva :wq
@@ -33,4 +34,6 @@ esses tipos só podem ser usados um de cada vez.
 os arquivos ainda possuem as modificaçoes
 -O hard mata o commit junto com todas as mudanças dos arquivos. CUIDADO!
 
-
+teste de email: [Kelven Live](dmytresksn@hotmail.com) 
+ou 
+[Kelven Gmail](dmytres@gmail.com)
