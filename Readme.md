@@ -1,4 +1,4 @@
-# <b>_Git_</b>
+# <b>Git</b>
 ## Aprendendo a usar o Git
 
 Arquivo teste da aula de Git - aula 8
@@ -85,7 +85,7 @@ O merge junta as branchs criando uma arvore e commits extras para a junçao acon
 Use-o com: git merge nome-da-branch
 Isso juntara a master com a branch dada.
 
-# _**Github**_
+# **Github**
 
 Estando seu git local conectado com algum repositorio do Github, use o comando
 para upar os commits feitos com: git push origin master
@@ -98,7 +98,7 @@ O arquivo .gitignore pode ser usado para indicar quais arquivos o git nao deve
 rastrear, ignorando formatos com asteristico.formato
 ou arquivos especificos o nome dele escrito.
 
-## Tags
+#### Tags
 
 Tags sao usadas para versionar o seu projeto, para criar uma tag no git use:
 git tag -a versao -m "Comentarios da versao"
