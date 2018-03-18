@@ -1,4 +1,4 @@
-# Git
+# <b>_Git_</b>
 ## Aprendendo a usar o Git
 
 Arquivo teste da aula de Git - aula 8
@@ -23,6 +23,7 @@ Para desfazer essas mudanças mostradas pelo DIFF usar: git checkout arquivo
 
 Se o arquivo tiver sido adicionado e entrado no estado staged,
 use: git reset HEAD arquivo. Para voltar ele pro estado unstaged
+## Desfazendo de commits
 
 Se vc tiver comitado errado existem comandos para desfazer isso,
 para isso existe o git reset, existem 3 tipos dele
@@ -33,6 +34,13 @@ esses tipos só podem ser usados um de cada vez.
 -O mixed mata tambem, e retorna os arquivos pro modified, ou seja
 os arquivos ainda possuem as modificaçoes
 -O hard mata o commit junto com todas as mudanças dos arquivos. CUIDADO!
+
+Outra opçao para o reset é o revert, ele nao apaga os commits feitos, mas por
+outro lado ele cria um novo commit igual a commit anterior, desfazendo o git
+que nao deveria ter sido feito, mas deixando ele no historico pra ser visualizado
+em outro momento se o usuário quiser, 
+use ele com: git revert codigo-do-commit-mostrado-no-log
+por exemplo: git revert 5ca46cs6c78as9c
 
 teste de email: [Kelven Live](dmytresksn@hotmail.com) 
 ou 
@@ -77,7 +85,7 @@ O merge junta as branchs criando uma arvore e commits extras para a junçao acon
 Use-o com: git merge nome-da-branch
 Isso juntara a master com a branch dada.
 
-# Github
+# _**Github**_
 
 Estando seu git local conectado com algum repositorio do Github, use o comando
 para upar os commits feitos com: git push origin master
@@ -98,4 +106,13 @@ por exemplo: git tag -a 1.0.1 -m "Arquivo X Atualizado"
 
 Depois disso upe sua versao com: git push origin master --tags
 
+Apagar tags no git é simples, use: git tag -d tag-a-apagar
+Exemplo: git tag -d 1.0.0
+
+## Desfazendo de Tags e Branches no Hub
+
+Deletar tags e branches upadas é um processo rápido, ambas usam o seguinte
+padrao de comando:
+git push origin :tag-a-apagar
+git push origin :branch-a-apagar
 
